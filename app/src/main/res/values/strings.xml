@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Identity -->
+    <string name="app_name">BL Manager</string>
+    <string name="app_version">الإصدار 1.0.0 (النسخة التجريبية)</string>
+    
+    <!-- Bottom Navigation -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_projects">المشاريع</string>
+    <string name="nav_history">السجل</string>
+    <string name="nav_settings">الإعدادات</string>
+    
+    <!-- Drawer Menu -->
+    <string name="drawer_header_title">مترجم BL ذكي</string>
+    <string name="drawer_header_subtitle">محرر ترجمة وتعديل احترافي</string>
+    <string name="menu_open_file">فتح ملف</string>
+    <string name="menu_translation_memory">ذاكرة الترجمة</string>
+    <string name="menu_dictionary">القاموس</string>
+    <string name="menu_plugins">الإضافات</string>
+    <string name="menu_help">المساعدة</string>
+    <string name="menu_about">حول التطبيق</string>
+    
+    <!-- Main Home Screen -->
+    <string name="choose_file_title">اختر ملف الترجمة لبدء العمل</string>
+    <string name="choose_file_btn">اختر ملفاً</string>
+    <string name="supported_formats">الصيغ المدعومة: XML • ARSC • JSON</string>
+    <string name="recent_files_section">الملفات الأخيرة</string>
+    <string name="quick_actions_section">الإجراءات السريعة</string>
+    <string name="btn_open">فتح</string>
+    
+    <!-- Quick Actions -->
+    <string name="action_recent_files">الملفات</string>
+    <string name="action_translate">الترجمة</string>
+    <string name="action_projects">المشاريع</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="action_about">حول</string>
+    
+    <!-- Search Screen -->
+    <string name="search_hint">بحث عن ملف أو كلمة مفتاحية...</string>
+    <string name="recent_searches">عمليات البحث الأخيرة</string>
+    <string name="suggestions">اقتراحات البحث</string>
+    <string name="suggestion_arsc">ترجمة ملفات ARSC</string>
+    <string name="suggestion_xml">ترجمة ملفات XML</string>
+    <string name="suggestion_json">ترجمة ملفات JSON</string>
+    
+    <!-- Settings Screen -->
+    <string name="settings_title">الإعدادات الاحترافية</string>
+    <color name="settings_header">#4CAF50</color>
+    <string name="setting_dark_theme">الوضع الداكن تلقائياً</string>
+    <string name="setting_dark_theme_desc">تفعيل مظهر واجهة المستخدم الداكن بالكامل</string>
+    <string name="setting_language">لغة التطبيق</string>
+    <string name="setting_language_desc">العربية (لغة أساسية)</string>
+    <string name="setting_font_size">حجم خط المحرر</string>
+    <string name="setting_font_size_desc">متوسط (14sp)</string>
+    <string name="setting_animations">تأثيرات الحركة والأنيميشن</string>
+    <string name="setting_animations_desc">تفعيل الانتقالات السلسة والرسوم المتحركة</string>
+    <string name="setting_ai_provider">مزود خدمة الذكاء الاصطناعي</string>
+    <string name="setting_ai_provider_desc">Gemini Pro API (ترجمة ذكية)</string>
+    <string name="setting_cache">حجم الذاكرة المؤقتة</string>
+    <string name="setting_cache_desc">تنظيف الذاكرة المؤقتة (الحالي: 12.4 ميجابايت)</string>
+    <string name="setting_export">إعدادات تصدير الملفات</string>
+    <string name="setting_export_desc">تصدير بصيغة ترميز UTF-8 مع الحفاظ على الهيكل</string>
+    <string name="setting_about_desc">BL Manager هو مدير ملفات ومترجم ذكي واحترافي مصمم خصيصاً للمطورين والمترجمين لتعديل ملفات الموارد بسهولة وسرعة.</string>
+    
+    <!-- Empty States -->
+    <string name="empty_recent_title">لا توجد ملفات حديثة</string>
+    <string name="empty_recent_desc">لم تقم بفتح أي ملفات للترجمة مؤخراً. انقر على الزر أدناه لاختيار ملفك الأول.</string>
+    <string name="empty_projects_title">لا توجد مشاريع قائمة</string>
+    <string name="empty_projects_desc">المشاريع تساعدك على تنظيم ملفات الترجمة المتعددة ومزامنتها في مكان واحد.</string>
+    <string name="empty_search_title">لا توجد نتائج تطابق بحثك</string>
+    <string name="empty_search_desc">لم نتمكن من العثور على أي ملف أو تعبير بالاسم الذي أدخلته. جرب استخدام كلمات مفتاحية أخرى.</string>
+    <string name="empty_history_title">سجل الترجمة فارغ</string>
+    <string name="empty_history_desc">سيظهر هنا سجل عمليات الترجمة والملفات التي قمت بتعديلها لتتمكن من العودة إليها لاحقاً.</string>
+    
+    <!-- Action Buttons -->
+    <string name="action_btn_create_project">بدء مشروع جديد</string>
+    <string name="action_btn_choose_file">اختيار ملف الآن</string>
+    <string name="action_btn_retry">إعادة المحاولة</string>
+    
+    <!-- Dialog Labels -->
+    <string name="dialog_success_title">تمت العملية بنجاح</string>
+    <string name="dialog_success_msg">تم حفظ وتصدير ملف الترجمة بنجاح وبدون أي أخطاء.</string>
+    <string name="dialog_error_title">فشلت العملية</string>
+    <string name="dialog_error_msg">حدث خطأ أثناء معالجة الملف. يرجى التأكد من سلامة ترميز الملف والمحاولة مرة أخرى.</string>
+    <string name="dialog_confirm_title">تأكيد الإجراء</string>
+    <string name="dialog_confirm_msg">هل أنت متأكد من رغبتك في مسح السجل بالكامل؟ لا يمكن التراجع عن هذا الإجراء لاحقاً.</string>
+    <string name="dialog_progress_msg">جاري معالجة وترتيب الملفات بالذكاء الاصطناعي...</string>
+    <string name="btn_close_dialog">إغلاق</string>
+    <string name="btn_ok">موافق</string>
+    <string name="btn_cancel">إلغاء</string>
+</resources>

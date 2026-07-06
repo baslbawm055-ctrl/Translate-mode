@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/secondary_bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Handle indicator -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="start"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_size_title_medium"
+        android:textStyle="bold"
+        android:text="خيارات الملف" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option_copy_name"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/text_primary"
+        android:text="نسخ اسم الملف"
+        app:icon="@android:drawable/ic_menu_save"
+        app:iconTint="@color/text_secondary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option_rename"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/text_primary"
+        android:text="إعادة تسمية الملف"
+        app:icon="@android:drawable/ic_menu_edit"
+        app:iconTint="@color/text_secondary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option_pin"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/text_primary"
+        android:text="تثبيت الملف"
+        app:icon="@drawable/ic_pin"
+        app:iconTint="@color/text_secondary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option_favorite"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/text_primary"
+        android:text="إضافة للمفضلة"
+        app:icon="@drawable/ic_star"
+        app:iconTint="@color/text_secondary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option_delete"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/error"
+        android:text="حذف الملف"
+        app:icon="@android:drawable/ic_menu_delete"
+        app:iconTint="@color/error" />
+</LinearLayout>

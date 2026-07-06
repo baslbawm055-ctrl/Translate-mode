@@ -1,0 +1,6 @@
+{
+  "name": "BL Manager",
+  "description": "محرر ترجمة ذكي واحترافي مستوحى من أسلوب MT Manager",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

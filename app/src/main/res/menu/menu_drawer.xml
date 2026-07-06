@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/drawer_open_file"
+            android:icon="@drawable/ic_file"
+            android:title="@string/menu_open_file" />
+        <item
+            android:id="@+id/drawer_projects"
+            android:icon="@drawable/ic_project"
+            android:title="@string/nav_projects" />
+        <item
+            android:id="@+id/drawer_history"
+            android:icon="@drawable/ic_history"
+            android:title="@string/nav_history" />
+    </group>
+
+    <item android:title="الأدوات الاحترافية">
+        <menu>
+            <item
+                android:id="@+id/drawer_translation_memory"
+                android:icon="@drawable/ic_translate"
+                android:title="@string/menu_translation_memory" />
+            <item
+                android:id="@+id/drawer_dictionary"
+                android:icon="@drawable/ic_dictionary"
+                android:title="@string/menu_dictionary" />
+            <item
+                android:id="@+id/drawer_plugins"
+                android:icon="@drawable/ic_plugin"
+                android:title="@string/menu_plugins" />
+        </menu>
+    </item>
+
+    <item android:title="أخرى">
+        <menu>
+            <item
+                android:id="@+id/drawer_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/nav_settings" />
+            <item
+                android:id="@+id/drawer_help"
+                android:icon="@drawable/ic_about"
+                android:title="@string/menu_help" />
+            <item
+                android:id="@+id/drawer_about"
+                android:icon="@drawable/ic_logo"
+                android:title="@string/menu_about" />
+        </menu>
+    </item>
+</menu>

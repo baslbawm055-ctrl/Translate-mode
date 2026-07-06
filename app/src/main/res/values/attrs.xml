@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PrimaryButton custom attributes -->
+    <declare-styleable name="PrimaryButton">
+        <attr name="pb_text" format="string" />
+        <attr name="pb_icon" format="reference" />
+        <attr name="pb_loading" format="boolean" />
+        <attr name="pb_cornerRadius" format="dimension" />
+    </declare-styleable>
+
+    <!-- SecondaryButton custom attributes -->
+    <declare-styleable name="SecondaryButton">
+        <attr name="sb_text" format="string" />
+        <attr name="sb_icon" format="reference" />
+        <attr name="sb_loading" format="boolean" />
+        <attr name="sb_size" format="enum">
+            <enum name="small" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="large" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!-- IconButton custom attributes -->
+    <declare-styleable name="IconButton">
+        <attr name="ib_icon" format="reference" />
+        <attr name="ib_shape" format="enum">
+            <enum name="circular" value="0" />
+            <enum name="square" value="1" />
+        </attr>
+        <attr name="ib_type" format="enum">
+            <enum name="filled" value="0" />
+            <enum name="outlined" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- CustomToolbar custom attributes -->
+    <declare-styleable name="CustomToolbar">
+        <attr name="ct_title" format="string" />
+        <attr name="ct_subtitle" format="string" />
+        <attr name="ct_showBackButton" format="boolean" />
+        <attr name="ct_showSearch" format="boolean" />
+        <attr name="ct_showOverflow" format="boolean" />
+    </declare-styleable>
+
+    <!-- CustomSearchBar custom attributes -->
+    <declare-styleable name="CustomSearchBar">
+        <attr name="cs_hint" format="string" />
+        <attr name="cs_query" format="string" />
+    </declare-styleable>
+</resources>

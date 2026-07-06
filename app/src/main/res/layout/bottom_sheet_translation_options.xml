@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/secondary_bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Handle indicator -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="start"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_size_title_medium"
+        android:textStyle="bold"
+        android:text="خيارات الترجمة" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option_edit_translation"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/text_primary"
+        android:text="تعديل الترجمة"
+        app:icon="@android:drawable/ic_menu_edit"
+        app:iconTint="@color/text_secondary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option_copy_original"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/text_primary"
+        android:text="نسخ النص الأصلي"
+        app:icon="@android:drawable/ic_menu_save"
+        app:iconTint="@color/text_secondary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option_copy_translated"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/text_primary"
+        android:text="نسخ النص المترجم"
+        app:icon="@android:drawable/ic_menu_save"
+        app:iconTint="@color/text_secondary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option_bookmark"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/text_primary"
+        android:text="حفظ في المفضلة"
+        app:icon="@drawable/ic_bookmark"
+        app:iconTint="@color/text_secondary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option_add_comment"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/text_primary"
+        android:text="إضافة تعليق للملاحظات"
+        app:icon="@drawable/ic_comment"
+        app:iconTint="@color/text_secondary" />
+</LinearLayout>
