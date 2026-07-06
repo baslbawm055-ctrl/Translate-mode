@@ -18,6 +18,15 @@ public class TranslationItem implements Serializable {
     private String sourceLang;
     private String targetLang;
     private boolean isBookmarked;
+    private String resourceType = "string"; // string, plural, array
+    private String filePath = "res/values/strings.xml";
+    private int lineNumber = 12;
+    private String resourceId = "0x7f0f0001";
+    private String comments = "تسمية توضيحية افتراضية";
+    private String pluralQuantity = ""; // one, other, etc.
+    private int arrayIndex = -1;
+    private boolean isEditedManually = false;
+    private boolean isAiGenerated = false;
 
     public TranslationItem(String key, String originalText) {
         this.key = key;
@@ -26,6 +35,78 @@ public class TranslationItem implements Serializable {
         this.status = STATUS_PENDING;
         this.errorMessage = "";
         this.isBookmarked = false;
+    }
+
+    public String getResourceType() {
+        return resourceType;
+    }
+
+    public void setResourceType(String resourceType) {
+        this.resourceType = resourceType;
+    }
+
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
+
+    public int getLineNumber() {
+        return lineNumber;
+    }
+
+    public void setLineNumber(int lineNumber) {
+        this.lineNumber = lineNumber;
+    }
+
+    public String getResourceId() {
+        return resourceId;
+    }
+
+    public void setResourceId(String resourceId) {
+        this.resourceId = resourceId;
+    }
+
+    public String getComments() {
+        return comments;
+    }
+
+    public void setComments(String comments) {
+        this.comments = comments;
+    }
+
+    public String getPluralQuantity() {
+        return pluralQuantity;
+    }
+
+    public void setPluralQuantity(String pluralQuantity) {
+        this.pluralQuantity = pluralQuantity;
+    }
+
+    public int getArrayIndex() {
+        return arrayIndex;
+    }
+
+    public void setArrayIndex(int arrayIndex) {
+        this.arrayIndex = arrayIndex;
+    }
+
+    public boolean isEditedManually() {
+        return isEditedManually;
+    }
+
+    public void setEditedManually(boolean editedManually) {
+        isEditedManually = editedManually;
+    }
+
+    public boolean isAiGenerated() {
+        return isAiGenerated;
+    }
+
+    public void setAiGenerated(boolean aiGenerated) {
+        isAiGenerated = aiGenerated;
     }
 
     public String getKey() {

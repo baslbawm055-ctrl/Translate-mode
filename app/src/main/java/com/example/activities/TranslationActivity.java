@@ -183,11 +183,12 @@ public class TranslationActivity extends AppCompatActivity {
         tvFileType.setText("نوع التنسيق: " + getExtension(name).toUpperCase());
         tvFileSize.setText("حجم الملف: " + formatSize(size));
 
+        final String finalName = name;
         Dialog progressDialog = CustomDialogs.showProgressDialog(this);
 
         try {
             InputStream inputStream = getContentResolver().openInputStream(uri);
-            repository.loadFile(inputStream, name, new TranslationRepository.LoadCallback() {
+            repository.loadFile(inputStream, finalName, new TranslationRepository.LoadCallback() {
                 @Override
                 public void onSuccess(List<TranslationItem> items) {
                     progressDialog.dismiss();
@@ -205,7 +206,12 @@ public class TranslationActivity extends AppCompatActivity {
                     CustomDialogs.showSuccessDialog(TranslationActivity.this,
                             "تم تحميل وتحليل الملف بنجاح!",
                             "تم استخراج " + items.size() + " نصوص صالحة للترجمة والتعريب بنجاح واحترافية.",
-                            null
+                            () -> {
+                                Intent intent = new Intent(TranslationActivity.this, com.example.activities.TranslationEditorActivity.class);
+                                intent.putExtra("file_name", finalName);
+                                intent.putExtra("items_list", new ArrayList<>(items));
+                                startActivity(intent);
+                            }
                     );
                 }
 

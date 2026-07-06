@@ -35,6 +35,12 @@
             android:exported="false"
             android:label="بيئة الترجمة الآلية"
             android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name="com.example.activities.TranslationEditorActivity"
+            android:exported="false"
+            android:label="محرر الترجمة الاحترافي"
+            android:theme="@style/Theme.MyApplication"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
